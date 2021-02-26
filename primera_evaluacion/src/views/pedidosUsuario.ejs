@@ -1,0 +1,28 @@
+<%- include ("headers/header"); %>
+<div class="container">
+  <div>
+    <table class="table table-active">
+      <thead>
+        <tr>
+          <th scope="col"># pedido</th>
+          <th scope="col">producto</th>
+          <th scope="col">cantidad</th>
+          <th scope="col">Total $</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% if (data) { %>
+        <% for(var i=0;i<data.length;i++){ %>
+        <tr class="table-light" >
+          <th scope="row" style="border-style: solid; border-color: #DBDBDB;"><%=(i+1)%></th>
+          <td style="border-style: solid; border-color: #DBDBDB;"><%= data[i].producto%></td>
+          <td style="border-style: solid; border-color: #DBDBDB;"><%- data[i].cantidad%></td>
+          <td style="border-style: solid; border-color: #DBDBDB;"><%= data[i].total%></td>
+        </tr>
+        <% } %>
+      <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<%- include ("headers/footer"); %>

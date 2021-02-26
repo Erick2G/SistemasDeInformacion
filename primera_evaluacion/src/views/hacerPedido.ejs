@@ -1,0 +1,29 @@
+<%- include ("headers/header"); %>
+<div class ="container">
+	<div  class="card bg-secondary mb-3" style="width: 700px;">
+		<div class="card-header" style="margin-top: 5px;"><h4><%-selected.nombre%><h4></div>
+		<div class="card-body container" style="display: flex; flex-wrap: wrap;">
+			<div class="col" style="width: 200px; max-width: 200px;">
+
+				<img  src="/images/<%-selected.nombre%>.jpg" width="180px" style="margin-bottom: 25px;">
+			</div>
+			<div class="col mt-2">
+				 <h4 class="card-title"">Precio: $<%-selected.precio%> /Kg</h4>
+				 <form action="/comprarUsuario/a/<%=selected.nombre %>" method ="POST">
+					 <div class="form-group col">
+						 <label for="exampleInputEmail1">Cantidad en Kg:</label>
+						 <input type="text" name="cantidad" placeholder="" maxsize="50" class="form-control" style="width: 250px">
+					 </div>
+					 <button type= "submit" class="btn btn-warning disabled" style="float: right;">
+							Agregar al carrito
+						</button>
+					</form>
+			</div>
+			<div class="col">
+				<h3>Total: $ X<h3>
+			</div>
+		</div>
+
+	</div>
+</div>
+<%- include ("headers/footer"); %>

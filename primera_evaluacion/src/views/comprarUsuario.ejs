@@ -1,0 +1,75 @@
+<%- include ("headers/header"); %>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+</style>
+
+<div class ="container" style="display: flex; flex-wrap: wrap;">
+	<form action="/comprarUsuario/a/<%= 'limon' %>" method="get">
+		<button type="submit" class="imagenBoton">
+			<img src="images/limon.jpg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Limón</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'fresa' %>" class="imagenBoton">
+			<img src="images/fresa.jpeg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Fresa</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'naranja' %>" class="imagenBoton">
+			<img src="images/naranja.jpg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Naranja</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'mandarina' %>" class="imagenBoton">
+			<img src="images/mandarina.jpg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Mandarina</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'manzana_verde' %>" class="imagenBoton">
+			<img src="images/manzana_verde.jpg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Manzana verde</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'manzana_roja' %>" class="imagenBoton">
+			<img src="images/manzana_roja.jpg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Manzana roja</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'pimiento' %>" class="imagenBoton">
+			<img src="images/pimiento.jpg" width="145px" style="margin-bottom: 0px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Pimiento</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'zanahoria' %>" class="imagenBoton">
+			<img src="images/zanahoria.jpg" width="150px" style="margin-bottom: 0px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Zanahoria</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'apio' %>" class="imagenBoton">
+			<img src="images/apio.jpg" width="150px" style="margin-bottom: 25px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Apio</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'jitomate' %>" class="imagenBoton">
+			<img src="images/jitomate.jpg" width="150px" style="margin-bottom: 0px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Jitomate</p>
+		</button>
+	</form>
+	<form  method="get">
+		<button type="submit" formaction="/comprarUsuario/a/<%= 'lechuga' %>"  class="imagenBoton">
+			<img src="images/lechuga.jpg" width="150px" style="margin-bottom: 0px;">
+			<p style="font-family: 'Work Sans', sans-serif; margin:0px;">Lechuga</p>
+		</button>
+	</form>
+</div>
+
+<%- include ("headers/footer"); %>
